@@ -55,7 +55,7 @@ function App() {
       setCurrentStreak((prev) => prev + 1);
       setLongestStreak((prev) => Math.max(prev, currentStreak + 1));
     } else {
-      setFeedback(`❌ Incorrect! The correct answer is ${facts[current].answer}.`);
+      setFeedback(`❌ Incorrect. The correct answer is ${facts[current].answer}.`);
       setCurrentStreak(0);
     }
     setShowAnswer(true);
